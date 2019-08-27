@@ -1,6 +1,6 @@
 ## looping-for-fun  
   
-[Checkered pattern](https://benduwe.github.io/looping-for-fun/)  
+[Checkered pattern](https://benduwe.github.io/learning-JavaScript/3.js-loops/)  
   
 # Challenge: Looooops
 
