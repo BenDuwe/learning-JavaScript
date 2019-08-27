@@ -2,7 +2,7 @@
   
 added javascript interactions to the Pokédex created during the consolidation challenges.  
   
-[Pokédex with javascript](https://benduwe.github.io/playing-DOM/)  
+[Pokédex with javascript](https://benduwe.github.io/learning-JavaScript/4.js-DOM-manipulation/)  
 
 # Challenge: DOM manipulation
 
