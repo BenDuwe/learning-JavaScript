@@ -1,6 +1,6 @@
 ## Form_alities  
   
-[Link to the Form](https://benduwe.github.io/js-Form_alities/)  
+[Link to the Form](https://benduwe.github.io/learning-JavaScript/8.js-form/)  
 
 # Challenge: Javascript to the challenge
 |Challenge Parameters  |Challenge Details              |
