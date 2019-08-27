@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: O;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  background-color: #15133c;
+  background-image: url(http://cheezetees.com/wp-content/uploads/2018/01/rockpaperscissorslizardspock_newthumb.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body .content-wrapper {
+  margin: -8px;
+  padding-right: 20%;
+  padding-left: 5%;
+  height: 100%;
+}
+body .content-wrapper h1 {
+  margin-bottom: Opx;
+}
+
+.player {
+  display: flex;
+  align-items: flex-end;
+  margin: 25px 0px;
+}
+.player h3 {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+%table-border {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    @extend %table-border;
+    tr {
+        @extend %table-border;
+        th {
+            background-color: rgba(153, 218, 34, 0.514);
+            @extend %table-border;
+        }
+        td {
+            @extend %table-border;
+        }
+    }
+}

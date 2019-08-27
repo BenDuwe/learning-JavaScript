@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="page-wrapper">
+        <img src="https://www.becode.org/register/assets/images/logo_Becode.png" alt="BeCode-logo">
+        <form id="register" onsubmit="handleSubmit()" method="GET">
+            <fieldset id="registerField" class="field">
+                <legend>Registration</legend>
+                <div>
+                    <label for="firstName">First name:</label>
+                    <input type="text" id="firstName" class="valid" name="first_name" title="Can only contains letters and ' - '" placeholder="What is your first name?" pattern="[^.\^()_@%$€!§°{}\?,;:/+*=²³#¨~<>[\]\\,'|\x22\s0-9]+" required/>
+                </div>
+                <div>
+                    <label for="lastName">Last name:</label>
+                    <input type="text" id="lastName" class="valid" name="last_name" title="Can only contains letters, ' - ' and spaces" placeholder="What is your last name?" pattern="[^.\^()_@%$€!§°{}\?,;:/+*=²³#¨~<>[\]\\,'|\x22-9]+" required/>
+                </div>
+                <div>
+                    <label for="userName">Username:</label>
+                    <input type="text" id="userName" class="valid" name="user_name" title="The following symbols: . ( ) / \ < > [ ] \ / , ' &#34 and spaces are not allowed" placeholder="Choose your username" pattern="[^.()/<>[\]\\,'|\x22\s]+" required/>
+                </div>
+                <div>
+                    <label for="email">Email-address:</label>
+                    <input type="email" id="email" class="valid" name="user_email" placeholder="Please enter your-email@gmail.com" pattern="[A-Za-z0-9._%+-]+@gmail\.com" required/>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" class="valid" name="user_password" title="Must contain at least 1 uppercase and 1 number" placeholder="At least 1 uppercase and 1 number" pattern="(?=.*\d)(?=.*[A-Z]).{1,}" required/>
+                </div>
+                <div>
+                    <label for="verify">Confirm password:</label>
+                    <input type="password" id="verify" class="valid" name="confirm_password" title="Must be the same as the password above" placeholder="Repeat your password" required/>
+                    <div></div>
+                </div>
+                <div>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" class="valid" name="user_address" placeholder="Street name" required/>
+                    <div></div>
+                </div>
+                <div>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" class="valid" name="user_city" placeholder="City" required/>
+                    <div></div>
+                </div>
+                <div>
+                    <label for="zip">Zip-code:</label>
+                    <input type="text" id="zip" class="valid" name="user_zip-code" placeholder="Zip-code" required/>
+                    <div></div>
+                </div>
+                <div>
+                    <label for="age">Age: <span class="optional">(Optional)</span></label>
+                    <input type="text" id="age" name="user_age" placeholder="What is your age?"/>
+                    <div></div>
+                </div>
+                <div>
+                    <label for="phone">Phone number: <span class="optional">(Optional)</span></label>
+                    <input type="tel" id="phone" name="phone_number" placeholder="What is your phone number?"/>
+                    <div></div>
+                </div>
+                <div>
+                    <label for="hobbies">Hobbies: <span class="optional">(Optional)</span></label>
+                    <input type="text" id="hobbies" name="user_hobbies" placeholder="Do you have any hobbies?"/>
+                    <div></div>
+                </div>
+                <div class="submitbtn">
+                    <button id="submit" type="submit">Submit information</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="JavaScript/main.js"></script>
+</body>
+</html>

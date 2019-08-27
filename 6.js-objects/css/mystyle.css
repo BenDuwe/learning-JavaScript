@@ -1,0 +1,15 @@
+body {
+  width: 100vw;
+}
+body .list-container {
+  width: 50%;
+}
+body .list-container #exercise-2 {
+  display: flex;
+  flex-direction: column;
+}
+body .img-container {
+  width: 40%;
+}
+
+/*# sourceMappingURL=mystyle.css.map */

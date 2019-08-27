@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rock, paper, scissors, ...</title>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <h1>Rock, Paper, Scissors....</h1>
+        <h2>....Lizard, Spock!</h2>
+
+        <div>
+            <h3>Amount of players</h3>
+            <select name="players" id="players">
+                <option value="1">1 Player</option>
+                <option value="2">2 Players</option>
+            </select>
+        </div>
+
+        <div>
+            <div class="player">
+            <h3>Player 1:&nbsp;</h3>
+            <div id="score1"></div>
+            </div>
+            <select name="p1choice" id="p1choice"></select>
+        </div>
+
+        <div>
+            <div class="player">
+            <h3>Player 2:&nbsp;</h3>
+            <div id="score2"></div>
+            </div>
+            <select name="p2choice" id="p2choice" disabled></select>
+        </div>
+
+        <button id="play">Play</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        let score_p1 = 0;
+        let score_p2 = 0;
+        let play = document.getElementById("play");
+        play.addEventListener("click", playGame); // clicking play button triggers function playGame(event)
+        let players = document.getElementById("players");
+        players.addEventListener("change", changeGame); // changing the amount of players triggers changeGame(event)
+        let p1choice = document.getElementById("p1choice"); 
+        let p2choice = document.getElementById("p2choice");
+        let choices = ["rock", "paper", "scissors", "lizard", "spock"]; // create array with options in order to loop and create option elements
+        /* looping over the array, creating option elements within the p1choice element */
+        for (choice of choices) {
+            let element = document.createElement("option");
+            element.value = choice;
+            element.innerHTML = choice;
+            p1choice.append(element);
+        }
+        /* looping over the array, creating option elements within the p2choice element */
+        for (choice of choices) {
+            let element = document.createElement("option");
+            element.value = choice;
+            element.innerHTML = choice;
+            p2choice.append(element);
+        }
+
+        /* function to get the choise made by players/computer */
+        function playGame() {
+            let p1value = p1choice.value;
+            let p2value;
+
+            if (p2choice.disabled === false) {
+                p2value = p2choice.value;
+            } else {
+                p2value = choices[Math.floor(Math.random() * choices.length)];
+            }
+
+            compare(p1value, p2value)
+        }
+        
+        // If, else, else if statemens to determin the winner of the game
+        function compare (val1, val2) {
+            let winner;
+            if(val1 === val2) {
+                winner = "TIEEEEEEEEE!"
+            }
+            else if(val1 === "rock") {
+                if(val2 === "scissors") {
+                    winner = "Player 1 wins!";
+                    score_p1 = ++score_p1;
+                }
+                else if(val2 === "lizard") {
+                    winner = "Player 1 wins!";
+                    score_p1 = ++score_p1;
+                }
+                else {
+                    winner = "Player 2 wins!"
+                    score_p2 = ++score_p2
+                }
+            }
+            else if (val1 === "paper") {
+                if(val2 === "rock") {
+                    winner = "Player 1 wins!";
+                    score_p1 = ++score_p1;
+                }
+                else if(val2 === "spock") {
+                    winner = "Player 1 wins!";
+                    score_p1 = ++score_p1;
+                }
+                else {
+                    winner = "Player 2 wins!";
+                    score_p2 = ++score_p2;
+                }
+            }
+            else if(val1 === "scissors") {
+                if(val2 === "paper") {
+                    winner = "Player 1 wins!";
+                    score_p1 = ++score_p1;
+                }
+                else if(val2 === "lizard") {
+                    winner = "Player 1 wins!";
+                    score_p1 = ++score_p1;
+                }
+                else {
+                    winner = "Player 2 wins!";
+                    score_p2 = ++score_p2;
+                }
+            }
+            else if(val1 === "lizard") {
+                if(val2 === "spock") {
+                    winner = "Player 1 wins!";
+                    score_p1 = ++score_p1;
+                }
+                else if(val2 === "paper") {
+                    winner = "Player 1 wins!";
+                    score_p1 = ++score_p1;
+                }
+                else {
+                    winner = "Player 2 wins!";
+                    score_p2 = ++score_p2;
+                }
+            }
+            else if(val1 === "spock") {
+                if(val2 === "rock") {
+                    winner = "Player 1 wins!";
+                    score_p1 = ++score_p1;
+                }
+                else if(val2 === "scissors") {
+                    winner = "Player 1 wins!";
+                    score_p1 = ++score_p1;
+                }
+                else {
+                    winner = "Player 2 wins!";
+                    score_p2 = ++score_p2;
+                }
+            }
+
+            // Display the selections plus the result in the webpage and tallying the score
+            document.getElementById("result").innerHTML =
+            "Player 1:" + " " + val1 + "</br>" +
+            "Player 2:" + " " + val2 + "</br>" +
+            "</br>" + winner;
+            document.getElementById("score1").innerHTML = " " + "score:" + " " + score_p1;
+            document.getElementById("score2").innerHTML = " " + "score:" + " " + score_p2;
+        }
+        
+        /* looks at the value of the option selected at the amount of players and
+         enables or disables player 2 based on that value
+         value = 1 --> player 2 disabled
+         value = 2 --> player 2 can be controlled */
+        function changeGame(event) {
+            if (players.value === "1") {
+                p2choice.disabled = true;
+            } else {
+                p2choice.disabled = false;
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

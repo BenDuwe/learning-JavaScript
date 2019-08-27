@@ -1,0 +1,13 @@
+body {
+    width: 100vw;
+    .list-container {
+        width: 50%;
+        #exercise-2 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .img-container {
+        width: 40%;
+    }
+}

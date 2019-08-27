@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/27e67ac84a.js"></script>
+    <link rel="stylesheet" href="css/pokestyle.css" />
+    <title>Pokédex</title>
+</head>
+
+<body class="d-flex flex-col jc-c ai-c">
+    <!-- <div>
+        <input type="text" id="pokesearch" name="pokesearch" placeholder="Pikachu">
+        <label for="pokesearch"><button id="search">Search!</button></label>
+    </div> -->
+
+    <div id="wrapper" class="d-flex jc-c ai-c">
+        <div id="closed" class="d-flex">
+            <div id="closed-panel" class="d-flex flex-wrap jc-c">
+                <div id="closed-top" class="d-flex">
+                    <div id="closed-top-space-left" class="d-flex">
+                        <div id="closed-lens" class="d-flex jc-c">
+                            <div id="closed-reflection"></div>
+                        </div>
+                        <div id="closed-traffic-dots" class="d-flex jc-between">
+                            <div id="closed-reddot" class="d-flex jc-c">
+                            </div>
+                            <div id="closed-yellowdot" class="d-flex jc-c">
+                            </div>
+                            <div id="closed-greendot" class="d-flex jc-c">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="closed-top-space-right" class="d-flex ai-end">
+                        <div id="closed-dec-border-tsr" class=""></div>
+                    </div>
+                </div>
+
+                <div id="closed-pic-screen" class="js-c d-flex flex-col ai-c">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/200653/logo.png" alt="Pokédex logo">
+                </div>
+
+            </div>
+
+            <div id="closed-hinge">
+                <div id="closed-hinge1"></div>
+                <div id="closed-hinge2"></div>
+                <div id="closed-hinge3"></div>
+                <div id="closed-hinge4"></div>
+                <div id="closed-hinge5"></div>
+                <div id="closed-hinge6"></div>
+            </div>
+        </div>
+
+        <div id="pokédex" class="d-flex">
+            <div id="left-panel" class="d-flex flex-wrap jc-c">
+                <div id="left-top" class="d-flex">
+                    <div id="top-space-left" class="d-flex">
+                        <div id="lens" class="d-flex jc-c">
+                            <div id="reflection"></div>
+                        </div>
+                        <div id="traffic-dots" class="d-flex jc-between">
+                            <div id="reddot" class="d-flex jc-c">
+                            </div>
+                            <div id="yellowdot" class="d-flex jc-c">
+                            </div>
+                            <div id="greendot" class="d-flex jc-c">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="top-space-right" class="d-flex ai-end">
+                        <div id="dec-border-tsr" class=""></div>
+                    </div>
+                </div>
+
+                <div id="pic-screen" class="js-c d-flex flex-col ai-c">
+                    <div id="double-dot" class="d-flex flex-row jc-between">
+                        <div id="sm-red1" class="sm-red"></div>
+                        <div id="sm-red2" class="sm-red"></div>
+                    </div>
+                    <div id="pic-frame" class="d-flex flex-row ai-c jc-c">
+                        <img id=pok_img src="https://thumbs.gfycat.com/IdioticSentimentalAtlanticridleyturtle-small.gif"
+                            alt="Princess Diancie">
+                    </div>
+                    <div id="pic-btns" class="d-flex flex-row">
+                        <div id="darkred-btn"></div>
+                        <div id="line-btns" class="d-flex flex-row ai-end">
+                            <div id="lines-left" class="d-flex ai-end spacing"><i class="fas fa-bars"></i></div>
+                            <div id="lines-right" class="d-flex ai-end spacing"><i class="fas fa-bars"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="bottom-left" class="d-flex jc-even">
+                    <div id="bottom-space-left">
+                        <div id="blue-rnd-btn"></div>
+                    </div>
+                    <div id="bottom-space-center" class="d-flex flex-col flex-wrap">
+                        <div id="bar-btns-l" class="d-flex ai-c jc-between">
+                            <div id="green-bar-l"></div>
+                            <div id="orange-bar-l"></div>
+                        </div>
+                        <div id="number-index" class="d-flex jc-c ai-c">
+                            <div id="number" class="d-flex jc-c ai-c">719</div>
+                        </div>
+                    </div>
+                    <div id="bottom-space-right">
+                        <div id="d-pad-up" class="d-flex jc-c ai-c"><i class="fas fa-caret-up"></i></div>
+                        <div id="d-pad-left" class="d-flex jc-c ai-c"><i class="fas fa-caret-left"></i></div>
+                        <div id="d-pad-middle" class="d-flex jc-c ai-c">
+                            <div id="d-pad-center" class="d-flex jc-c ai-c"></div>
+                        </div>
+                        <div id="d-pad-right" class="d-flex jc-c ai-c"><i class="fas fa-caret-right"></i></div>
+                        <div id="d-pad-down" class="d-flex jc-c ai-c"><i class="fas fa-caret-down"></i></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="hinge">
+                <div id="hinge1"></div>
+                <div id="hinge2"></div>
+                <div id="hinge3"></div>
+                <div id="hinge4"></div>
+                <div id="hinge5"></div>
+                <div id="hinge6"></div>
+            </div>
+
+            <div id="right-panel" class="d-flex flex-wrap jc-c">
+                <div id="right-top" class="d-flex">
+                    <div id="r-top-space-left" class="d-flex ai-end">
+                        <div id="r-dec-border-tsl" class=""></div>
+                    </div>
+
+                    <div id="r-top-space-right" class="d-flex">
+                    </div>
+                </div>
+
+                <div id="screen-shadow">
+                    <div id="green-screen" class="d-flex flex-col">
+                        <div id="pokinfo-1" class="pokinfo"><span class="bold">Name: </span><span id="pok_name"
+                                class="pokName">diancie</span></div>
+                        <div id="pokinfo-2" class="pokinfo"><span class="bold">Weight: </span><span id="pok_weight">8.8
+                                kg</span></div>
+                        <div id="pokinfo-3" class="d-flex flex-col pokinfo"><span class="bold">Abilities: </span><span
+                                id="pok_abilities">clear-body</span></div>
+                        <div id="pokinfo-4" class="d-flex flex-col"><span class="bold">Moves: </span>
+                            <div id="test_moves" class="moveset-container">
+                                <div class="move-style">tackle</div>
+                                <div class="move-style">hyper-beam</div>
+                                <div class="move-style">rock-throw</div>
+                                <div class="move-style">toxic</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="list-container" class="pok_list">
+                        <ul id="list" class="capital"></ul>
+                    </div>
+
+                </div>
+                <div id="blue-square-btns" class="d-flex flex-wrap jc-c">
+                    <input type="text" id="pokesearch" class="searchbar" name="pokesearch" placeholder="Diancie">
+                    <label for="pokesearch"  class="blue-search d-flex jc-c ai-c"><button id="search" class="searchbtn"><i class="fas fa-search"></i></button></label>
+                    <div id="bluesquare-6" class="blue-btn"></div>
+                    <div id="bluesquare-7" class="blue-btn"></div>
+                    <div id="bluesquare-8" class="blue-btn"></div>
+                    <div id="bluesquare-9" class="blue-btn"></div>
+                    <div id="bluesquare-10" class="blue-btn"></div>
+                </div>
+                <div id="r-middle-bar" class="d-flex jc-between">
+                    <div id="tinyandarrows" class="d-flex flex-col">
+                        <div id="tiny-btns" class="d-flex">
+                            <div id="tinybtn-1"></div>
+                            <div id="tinybtn-2"></div>
+                        </div>
+                        <div id="navigate" class="d-flex">
+                            <div id="previous" class="d-flex jc-c ai-c"><i class="fas fa-caret-left"></i></div>
+                            <div id="next" class="d-flex jc-c ai-c"><i class="fas fa-caret-right"></i></div>
+                        </div>
+                    </div>
+                    <div id="barsandplay" class="d-flex flex-col">
+                        <div id="bar-btns-l" class="d-flex ai-c jc-between">
+                            <div id="green-bar-l"></div>
+                            <div id="orange-bar-l"></div>
+                        </div>
+                        <div id="play-btn" class="d-flex jc-c ai-c as-end">
+                            <div id="play-icon" class="d-flex jc-c ai-c">&#9668;</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="yellow-btns" class="d-flex jc-between">
+                    <div id="yellowbtn-1" class="yllw-btn d-flex jc-c ai-c">List</div>
+                    <div id="yellowbtn-2" class="yllw-btn d-flex jc-c ai-c"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scripts/pokeapi.js"></script>
+    <script src="scripts/myscript.js"></script>
+
+</body>
+
+</html>
