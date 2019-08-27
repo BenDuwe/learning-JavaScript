@@ -1,6 +1,6 @@
 ## variables-datatypes-operators
 
-[Table with operator outcomes](https://benduwe.github.io/variables-datatypes-operators/)  
+[Table with operator outcomes](https://benduwe.github.io/learning-JavaScript/1.js-variables/)  
   
 # Challenge: Variables, Basic Datatypes & Operators
 
