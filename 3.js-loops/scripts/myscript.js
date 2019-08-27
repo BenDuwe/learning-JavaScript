@@ -6,7 +6,7 @@ standard.addEventListener("click", generateField);
 let random = document.getElementById("random");
 random.addEventListener("click", makeRandom)
 
-let size = 7
+let size = 10
 // let arr = [];
 // while (x < 101){
 //     arr.push(x++);
