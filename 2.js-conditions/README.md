@@ -1,6 +1,6 @@
 ## rock-paper-scissors  
   
-[The game](https://benduwe.github.io/rock-paper-scissors/)  
+[The game](https://benduwe.github.io/learning-JavaScript/2.js-conditions/)  
   
 # Challenge: Conditional statements
 
