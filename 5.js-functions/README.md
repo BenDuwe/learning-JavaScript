@@ -1,6 +1,6 @@
 ## Calculator  
   
-[Basic calculator](https://benduwe.github.io/Calculator/)  
+[Basic calculator](https://benduwe.github.io/learning-JavaScript/5.js-functions/)  
   
 # Challenge: Functions and events
 
