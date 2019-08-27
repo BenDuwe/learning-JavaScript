@@ -1,3 +1,7 @@
+## link to result:
+
+[Quote machine](https://benduwe.github.io/learning-JavaScript/7.js-ajax/)
+
 # Challenge: Asynchronous JavaScript and XML
 |Challenge Parameters  |Challenge Details              |
 |:---------------------|:------------------------------|
