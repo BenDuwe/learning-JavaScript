@@ -1,6 +1,6 @@
 ## JavaScript-objects
 
-[Link to the result](https://benduwe.github.io/JavaScript-objects/)  
+[Link to the result](https://benduwe.github.io/learning-JavaScript/6.js-objects)  
   
 # Challenge: Objects
 
